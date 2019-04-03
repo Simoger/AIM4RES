@@ -108,4 +108,4 @@ Members of the [Laboratoire d'Interprétation et Acquisition des Mesures en Géo
 
 ## License
 
-This project is licensed under the ??? License
+This project is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE.txt for details.
