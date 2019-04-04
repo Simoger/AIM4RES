@@ -39,10 +39,9 @@ function u = integration_U(U,wk,k,nbk1)
 %                               (@ @)                                     %
 %               **********oooO***(_)***Oooo**********                     %
 %               * -----> Abderrezak BOUCHEDDA<----- *                     %
-%               *      bouchedda@geo.polymtl.ca     *                     %
-%               *  Ecole polytechnique de Montreal  *                     %
-%               *  depart. de géophysique appliquée *                     %
-%               *  http://geo.polymtl.ca            *                     %
+%               *  Abderrezak.Bouchedda@ete.inrs.ca *                     %
+%               *  INRS-ETE                         *                     %
+%               *  http://www.ete.inrs.ca/ete       *                     %
 %               *************************************                     %
 %                             |_______|                                   %
 %                              |__|__|                                    %

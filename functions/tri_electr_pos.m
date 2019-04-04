@@ -40,10 +40,9 @@ function [pos,ind,L,sign]= tri_electr_pos(meas_posC1 , meas_posC2 , elect_bh1 , 
 %                               (@ @)                                     %
 %               **********oooO***(_)***Oooo**********                     %
 %               * -----> Abderrezak BOUCHEDDA<----- *                     %
-%               *      bouchedda@geo.polymtl.ca     *                     %
-%               *  Ecole polytechnique de Montreal  *                     %
-%               *  depart. de geophysique appliquee *                     %
-%               *  http://geo.polymtl.ca            *                     %
+%               *  Abderrezak.Bouchedda@ete.inrs.ca *                     %
+%               *  INRS-ETE                         *                     %
+%               *  http://www.ete.inrs.ca/ete       *                     %
 %               *************************************                     %
 %                             |_______|                                   %
 %                              |__|__|                                    %

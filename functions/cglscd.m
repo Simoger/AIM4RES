@@ -38,10 +38,9 @@ function [x, error, iter] = cglscd(J, x, b, BETA, CTC, dxc, D, P, max_it, tol, a
 %                               (@ @)                                     %
 %               **********oooO***(_)***Oooo**********                     %
 %               * -----> Abderrezak BOUCHEDDA<----- *                     %
-%               *      bouchedda@geo.polymtl.ca     *                     %
-%               *  Ecole polytechnique de Montreal  *                     %
-%               *  depart. de géophysique appliquée *                     %
-%               *  http://geo.polymtl.ca            *                     %
+%               *  Abderrezak.Bouchedda@ete.inrs.ca *                     %
+%               *  INRS-ETE                         *                     %
+%               *  http://www.ete.inrs.ca/ete       *                     %
 %               *************************************                     %
 %                             |_______|                                   %
 %                              |__|__|                                    %

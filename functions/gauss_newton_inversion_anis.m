@@ -43,10 +43,10 @@ function [param, XYZ, Inv] = gauss_newton_inversion_anis(param,XYZ)
 %     http://www.ete.inrs.ca/                                             %
 %                                                                         %
 % Abderrezak BOUCHEDDA                                                    %
-%     bouchedda@geo.polymtl.ca                                            %
-%     Ecole polytechnique de Montreal                                     %
-%     Departement de géophysique appliquée                                %
-%     http://geo.polymtl.ca                                               %
+%     Abderrezak.Bouchedda@ete.inrs.ca                                    %
+%     Institut National de la Recherche Scientifique                      %
+%     Centre Eau-Terre-Environnement                                      %
+%     http://www.ete.inrs.ca/                                             %
 %                                                                         %
 % This program is free software; you can redistribute it and/or modify    %
 % it under the terms of the GNU General Public License as published by    %
