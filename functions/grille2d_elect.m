@@ -97,7 +97,7 @@ function [grille,h_x,h_z] =grille2d_elect(hx,hz,fact,nb_pad_bloc,nb_raff,nb_surr
     hx1 = hx(1);
     hx2 = hx(end);
     hz1 = hz(end);
-    ind_x0 = ind_x0-3;
+%     ind_x0 = ind_x0-3;
     hx=[hx1*ones(nb_surr,1);
         hx;
         hx2*ones(nb_surr,1)];

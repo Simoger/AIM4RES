@@ -172,7 +172,7 @@ function [param, XYZ, Inv] = gauss_newton_inversion_anis(param,XYZ)
             param.inv.BETA = max(param.inv.BETA/2,10^-6);
         end
 
-        % potential calculation
+        % potential and sensitivity calculation
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         disp(['Sensitivity calculus iteration #',num2str(itc)]);
@@ -212,9 +212,8 @@ function [param, XYZ, Inv] = gauss_newton_inversion_anis(param,XYZ)
 
             % Distance weighting - recommended
             if strcmp(param.inv.weightFun,'distance') 
-                % beta_weight = .3;
-                    beta_weight_1 = .06;
-                    beta_weight_2 = .06;
+                    beta_weight_1 = .1;
+                    beta_weight_2 = .1;
                 message_weight = strcat('Weighting based weighting function applied (iter #',num2str(itc),')');
                 disp(message_weight)
                 wt1 = distance_weighting(param,beta_weight_1);
@@ -228,11 +227,14 @@ function [param, XYZ, Inv] = gauss_newton_inversion_anis(param,XYZ)
                 wt = [wt1 , wt2];
 
                 wt = wt(:);
+                
+                [CTC,~,~] = CtC_anis(wt,param,param.flag.inv.p); %
             
+                
             % Sensitivity weighting
             elseif strcmp(param.inv.weightFun,'sensitivity') 
-                message_weight = strcat('Sensitivity based weighting function applied (iter #',num2str(itc),', Ki = ',num2str(Ki),')');
-                disp(message_weight)
+%                 message_weight = strcat('Sensitivity based weighting function applied (iter #',num2str(itc),', Ki = ',num2str(Ki),')');
+%                 disp(message_weight)
 
                 wt = (sum(J.*J));
 

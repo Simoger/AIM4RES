@@ -92,6 +92,8 @@ function Q=distance_weighting(param,beta)
 %     Q(Q<1e-3) = 1e-3;
     
     Q = reshape(Q,param.nb_col,param.nb_ligne)';
-    Q(:,[1:param.nb_pad_bloc+param.nb_surr-3 end-(param.nb_pad_bloc+param.nb_surr)+3:end]) = 1;
-    Q(end-(param.nb_pad_bloc+param.nb_surr)+3:end,:) = 1;
+    Q(:,[1:param.nb_pad_bloc+param.nb_surr end-(param.nb_pad_bloc+param.nb_surr):end]) = 1;
+    Q(end-(param.nb_pad_bloc+param.nb_surr):end,:) = 1;
+%     Q(:,[1:param.nb_pad_bloc+param.nb_surr-3 end-(param.nb_pad_bloc+param.nb_surr)+3:end]) = 1;
+%     Q(end-(param.nb_pad_bloc+param.nb_surr)+3:end,:) = 1;
 end
